@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>玩轉台灣經典小吃</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  #p2 p,#p3 p,#p4 p,#p5 p{
+    font-size:30px;
+  }
+  #p6 p{
+    font-size:50px;
+    font-weight:bold;
+    color:rgb(255, 81, 0);
+  }
+  #p2 li,#p3 li,#p4 li{
+    font-size: 20px;
+  }
+  #p5 td img{
+    width:120px
+  }
+  #p5 tr:nth-child(odd){
+    background:tomato;
+    color:thistle
+  }
+  #p5 tr:nth-child(even){
+    background:salmon;
+    color:wheat;
+  }
+  #p5 td{
+    padding:5px 20px;
+  }
+  </style>
+</head>
+<body class="overflow-hidden">
+  <a href="https://food.ltn.com.tw/article/338"></a>
+  <div id="p1" class="bg-dark vw-100 vh-100 row flex-column justify-content-center align-items-center text-light">
+    <img src="img/a.jpg" class="sticky-top">
+<p>如何完成一道美味的蚵仔煎?!</p>
+<div class="btn btn-outline-warning" onclick="food()">請按"Here"開始</div>
+  </div>
+  <div id="p2" class="bg-warning vw-100 vh-100 row flex-column justify-content-center align-items-center text-dark">
+    <p>請準備以下6樣食材</p>
+    <ol class="bg-dark text-warning p-5"></ol>
+    <button onclick="check()">食材準備完成</button>
+  </div>
+  <div id="p3" class="bg-primary vw-100 vh-100 row flex-column justify-content-center align-items-center text-light">
+      <p>請將下述粉及水充份混合</p>
+      <ol class="bg-dark text-primary p-5"></ol>
+      <button onclick="check1()">已經攪拌均勻</button>
+    </div>
+    <div id="p4" class="bg-info vw-100 vh-100 row flex-column justify-content-center align-items-center text-light">
+        <p>美味的精髓</p>
+        <ol class="bg-dark text-info p-5"></ol>
+        <button onclick="check2()">要正式進入大魔王關卡了!</button>
+      </div>
+      <div id="p5" class="bg-danger vw-100 vh-100 row flex-column justify-content-center align-items-center text-light">
+          <p>請按步就班</p>
+          <table width="80%">
+            <tr>
+              <td>A</td>
+              <td><img src="img/1.jpg"/></td>
+              <td>
+                  鮮蚵以鹽水洗淨，去除沾黏在蚵仔上的小碎粒與黏液，再將水分瀝乾備用。小白菜清洗後切小段。
+                <br>
+                  POINT!! 鮮蚵盡量挑選肥大且飽滿的，避免過小的鮮蚵一下鍋就縮掉。注意水份必須盡量瀝乾，以免下油鍋時會爆與噴油。
+              </td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td><img src="img/4.jpg"/></td>
+              <td>
+                  再視情況添加一點油，保持鍋內油亮以免變焦。
+                  <br>
+                  POINT!!鮮蚵與粉水都容易吸油，若不添油則會過乾且焦，這樣的蚵仔煎就不好吃了。</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td><img src="img/3.jpg"/></td>
+              <td>
+                  取適量油熱鍋，待鍋熱、油熱後放入薑末爆香後，下鮮蚵稍微炒，直到鮮蚵半熟、微微變色後，加入粉漿，將蚵仔覆蓋上薄薄一層。
+                  <br>
+                  POINT!!油不夠熱則加入粉漿時，不易凝固。</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>NO PICTURE</td>
+              <td>粉水凝固後，把打散的蛋液均勻淋在蚵仔上，邊緣稍微凝固、變色後，加入小白菜，上蓋靜置燜一下。</td>
+            </tr>
+            <tr>
+              <td>E</td>
+              <td><img src="img/7.jpg"/></td>
+              <td>
+                  醬料材料混合均勻，淋在蚵仔煎上方即可。
+                <br>
+                  POINT!!若想改做蝦仁煎，蝦仁可選用紅蝦仁，色澤粉紅較具賣相。去腸泥洗淨後入滾水汆燙3～5秒即起，以冷水沖洗後保有Q度與口感。蝦仁煎的做法與蚵仔煎相同</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td><img src="img/6.jpg"/></td>
+              <td>
+                  待粉漿煎到變色後，翻面將青菜覆蓋，靜置煎5～6秒，即可盛盤。
+                  <br>
+                  POINT!!青菜不可悶煎過久，不但會縮也會變爛，嚴重影響口感！</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td><img src="img/2.jpg"/></td>
+              <td>
+                  粉漿食材用打蛋器調勻，拌勻備用。
+                  <br>
+                  POINT!! 粉漿可以依個人喜好，加入少許的米酒、白醋和香油提味，或是加入少許的鹽巴增添鹹味，能讓粉漿吃起來更香。</td>
+            </tr>
+          </table>
+          <br>
+          <button onclick="check3()">讓我們來完成這道台灣經典小吃吧!</button>
+        </div>
+        <div id="p6" class="bg-dark vw-100 vh-100 row flex-column justify-content-center align-items-center">
+            <p>完成1道美食囉!</p>
+            <img src="img/a.jpg" class="sticky-bottom">
+          </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script>
+  var name = "";
+  (function foodpanda(){
+         if((name= prompt("大師!我該如何稱呼你呢?","foodpanda"))){
+             alert("就讓"+name +"來為大家上菜");
+         }
+         else{
+             name="青蚵嫂";
+             alert("不給名字，其實我也不是那麼反對叫你青蚵嫂啦~~那就請青蚵嫂拿出你挖蚵仔的食力來吧!!");
+  }})();
+  function food(){
+    location.href="#p2"
+  }
+  var list = ["鮮蚵10～15隻","小白菜1小把","雞蛋1顆","蔥花少許","薑末少許","油少許"];
+  var list1 = ["粗粒地瓜粉0.5大匙","細粒地瓜粉2大匙","中筋麵粉0.5大匙","水7～9大匙"];
+  var list2 = ["辣椒醬1小匙","紅味噌1.5大匙","番茄醬1.5大匙","糖1大匙","水約7～8大匙","醬油0.5大匙","花生粉少許","豆瓣醬少許","再來米粉0.5大匙（可不加）"];
+    var b = "";
+    $.each(list,function(key,val){b +="<li>"+list[key]+"</li>"});
+var c = $('#p2').children('ol').html(b);
+    var d = "";
+    $.each(list1,function(key,val){d += "<li>"+list1[key]+"</li>"});
+var e = $('#p3').children('ol').html(d);
+    var f = "";
+    $.each(list2,function(key,val){f += "<li>"+list2[key]+"</li>"});
+var g = $('#p4').children('ol').html(f);
+// console.log(e)
+;
+function check(){
+  a1 = confirm("現在來考驗你的記憶力好不好")
+if(a1) {
+alert('開始囉!');
+$('#p2').children('ul').css("display","none");
+Q1 = confirm("我叫你準備1隻蚵仔嗎?");
+if(Q1){
+  alert("out! 難道你覺得1隻蚵仔就夠吃嗎! 重來!");
+  location.reload()
+}
+else{
+  alert("你果然有在吃挺立，記憶力鈣好，我相信後面的關卡你也沒問題! 來吧!");
+  alert("再來一題喔!")
+  Q2 = confirm("總共要準備6本食材對嗎?");
+  if(Q2){
+    alert("out! 國語回去重修! 是6「樣」「樣」「樣」…董嗎!");
+    location.reload()
+  }
+  else{
+    alert("恭禧你!你正在走在成功的道路上!");
+    location.href="#p3"
+  }
+}
+}
+else{
+  alert('還沒記好，那就再等你一下');
+  }
+};
+function check1(){
+  alert('我相信你是用「中筋麵粉」! 讓我們進行下一步');
+  location.href="#p4";
+}
+function check2(){
+alert( name + "加油!醬料材料混合均勻, 一個都不能少，好不好吃就看這一味啦");
+location.href="#p5"
+}
+function check3(){
+  alert("請按照圖片及說明，進行料理作業!");
+  if(q1 =prompt("請從A~G,請選擇第一個步驟(請使用大寫)","")){
+    if(q1 == "A"){
+      alert("正確");
+      q2 = prompt("B,C,D,E,F,G 請選擇第二步驟","");
+      if(q2 == "G"){
+        alert("正確");
+        q3 = prompt("B,C,D,E,F 請選擇第三步驟","");
+        if(q3 == "C"){
+          alert("正確");
+          q4 = prompt("B,D,E,F 請選擇第四個步驟","加油!快完成了");
+          if(q4 == "B"){
+            alert("你正邁向偉大的航道");
+            q5 = prompt("D,E,F 請從中選擇第五個步驟","貼心小提示「沒有照片的那一個」")
+            if(q5 == "D"){
+              alert(name+"果然是個聰明的，舉一反三你最會");
+              q6 = prompt("E,F 只剩2個步驟囉!這次你選要選哪個?!","")
+              if(q6 == "F"){
+                alert("太棒了!!就快完成了!!");
+                if(confirm("最後一個步驟是B嗎?")){
+                  alert("失敗out!!我嚴重懷疑"+name+"有沒有認真看");
+                }
+                else{
+                  alert("完成!"+name+"大廚，上菜囉!");
+                  location.href="#p6";
+                  alert("謝謝招待，請期待後續陸續推出的經典小吃!")
+                }
+              }
+                else{
+      alert("失敗!");
+            }
+              }
+  
+            else{
+      alert("失敗!");
+    }
+          }
+          else{
+      alert("失敗!");
+    }
+
+        }
+        else{
+      alert("失敗!");
+    }
+      }
+      else{
+      alert("失敗!");
+
+    }
+    }
+    else{
+      alert("失敗!");
+
+    }
+  }
+  else{
+    alert(name+"應該勇敢接受挑戰的!");
+  }
+}
+</script>
+</body>
+</html>
